@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Gulam Rabbani - Future AI Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-container">
+            <div class="loading-cube">
+                <div class="loading-face loading-face-front"></div>
+                <div class="loading-face loading-face-back"></div>
+                <div class="loading-face loading-face-right"></div>
+                <div class="loading-face loading-face-left"></div>
+                <div class="loading-face loading-face-top"></div>
+                <div class="loading-face loading-face-bottom"></div>
+            </div>
+            <div class="loading-text">
+                <span class="loading-letter">F</span>
+                <span class="loading-letter">U</span>
+                <span class="loading-letter">T</span>
+                <span class="loading-letter">U</span>
+                <span class="loading-letter">R</span>
+                <span class="loading-letter">E</span>
+                <span class="loading-space"></span>
+                <span class="loading-letter">A</span>
+                <span class="loading-letter">I</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <div class="loading-percentage">0%</div>
+        </div>
+        <div class="loading-particles"></div>
+    </div>
+
+    <!-- Cursor -->
+    <div id="cursor" class="cursor">
+        <div class="cursor-inner"></div>
+        <div class="cursor-outer"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-3d">
+                    <span class="logo-text">FUTURE</span>
+                    <span class="logo-tech">AI</span>
+                </div>
+                <div class="logo-particles"></div>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link" data-text="Home">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link" data-text="About">About</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link" data-text="Services">Services</a></li>
+                <li class="nav-item"><a href="#tech" class="nav-link" data-text="Technology">Technology</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link" data-text="Portfolio">Portfolio</a></li>
+                <li class="nav-item"><a href="#team" class="nav-link" data-text="Team">Team</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link" data-text="Contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+        </div>
+        <div class="nav-bg-effect"></div>
+    </nav>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top hidden">
+        <span class="arrow-up">↑</span>
+    </button>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="hero-canvas" class="hero-canvas"></canvas>
+        <div class="hero-particles" id="hero-particles"></div>
+        
+        <div class="hero-content">
+            <div class="hero-title-container">
+                <h1 class="hero-title">
+                    <span class="title-word" data-text="FUTURE">FUTURE</span>
+                    <span class="title-word" data-text="AI">AI</span>
+                    <span class="title-word" data-text="TECH">TECH</span>
+                </h1>
+                <div class="title-underline">
+                    <div class="underline-segment"></div>
+                    <div class="underline-segment"></div>
+                    <div class="underline-segment"></div>
+                </div>
+            </div>
+            
+            <h2 class="hero-subtitle">Building Spontaneous AI Systems</h2>
+            
+            <p class="hero-description">
+                Exploring the next generation of artificial intelligence that goes beyond simple automation - creating AI systems that are more human-centered, spontaneous, and deeply integrated with daily life.
+            </p>
+            
+            <div class="hero-buttons">
+                <button class="btn btn-primary hero-btn" data-text="Explore AI" onclick="scrollToSection('services')">
+                    <span class="btn-text">Explore AI</span>
+                    <div class="btn-particles"></div>
+                </button>
+                <button class="btn btn-secondary hero-btn" data-text="View Projects" onclick="scrollToSection('portfolio')">
+                    <span class="btn-text">View Projects</span>
+                    <div class="btn-particles"></div>
+                </button>
+            </div>
+        </div>
+
+        <div class="hero-scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span class="scroll-text">Scroll to explore</span>
+        </div>
+
+        <div class="hero-stats">
+            <div class="stat-item">
+                <div class="stat-number" data-target="25">0</div>
+                <div class="stat-label">AI Projects</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="50">0</div>
+                <div class="stat-label">ML Models Built</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="5">0</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Mohammad Gulam Rabbani</h2>
+                <div class="section-subtitle">Aspiring AI & ML Engineer passionate about building intelligent systems</div>
+                <div class="title-decoration">
+                    <div class="decoration-line"></div>
+                    <div class="decoration-diamond"></div>
+                    <div class="decoration-line"></div>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-intro">
+                        <p class="text-large">Aspiring AI & ML Engineer passionate about building intelligent systems that go beyond simple automation. My focus is on creating AI that is more human-centered, spontaneous, and deeply integrated with daily life.</p>
+                    </div>
+                    
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <h3 class="detail-title">My Vision</h3>
+                            <p class="detail-text">Traditional AI works in a reactive way — you ask, and it responds. But what happens if AI can capture spontaneous thoughts, track patterns, and build a personal life-history model of its user. Think of it as a second brain 🧠 — one that remembers, reflects, and helps you connect ideas you might otherwise forget.</p>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <h3 class="detail-title">My Approach</h3>
+                            <p class="detail-text">I believe in creating AI systems that understand context, emotion, and human behavior. My work focuses on developing models that can learn from user interactions and provide meaningful insights.</p>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <h3 class="detail-title">My Goals</h3>
+                            <p class="detail-text">To revolutionize how we interact with AI by making it more intuitive, spontaneous, and truly helpful in enhancing human potential and creativity.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-visual">
+                    <div class="hologram-container">
+                        <canvas id="about-canvas" class="about-canvas"></canvas>
+                        <div class="hologram-frame">
+                            <div class="frame-corner frame-top-left"></div>
+                            <div class="frame-corner frame-top-right"></div>
+                            <div class="frame-corner frame-bottom-left"></div>
+                            <div class="frame-corner frame-bottom-right"></div>
+                        </div>
+                        <div class="hologram-data">
+                            <div class="data-stream" data-delay="0">AI.initialize()</div>
+                            <div class="data-stream" data-delay="500">ML.train_model()</div>
+                            <div class="data-stream" data-delay="1000">Neural.activate()</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-stats">
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <div class="icon-ai"></div>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" data-target="95">0</div>
+                            <div class="stat-unit">%</div>
+                            <div class="stat-label">AI Accuracy</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <div class="icon-brain"></div>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" data-target="10">0</div>
+                            <div class="stat-unit">+</div>
+                            <div class="stat-label">ML Frameworks</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <div class="icon-neural"></div>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" data-target="100">0</div>
+                            <div class="stat-unit">+</div>
+                            <div class="stat-label">Neural Networks</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Services</h2>
+                <div class="section-subtitle">Cutting-edge AI & ML solutions for tomorrow's challenges</div>
+                <div class="title-decoration">
+                    <div class="decoration-line"></div>
+                    <div class="decoration-diamond"></div>
+                    <div class="decoration-line"></div>
+                </div>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-service="ai">
+                    <div class="service-icon">
+                        <canvas class="service-canvas" id="service-canvas-1"></canvas>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">AI & Machine Learning</h3>
+                        <p class="service-description">Developing intelligent systems using TensorFlow, PyTorch, and advanced ML algorithms</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Python</span>
+                            <span class="feature-tag">TensorFlow</span>
+                            <span class="feature-tag">PyTorch</span>
+                            <span class="feature-tag">Scikit-learn</span>
+                        </div>
+                    </div>
+                    <div class="service-hover-effect"></div>
+                </div>
+
+                <div class="service-card" data-service="3d">
+                    <div class="service-icon">
+                        <canvas class="service-canvas" id="service-canvas-2"></canvas>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">3D Web Development</h3>
+                        <p class="service-description">Creating immersive 3D experiences using WebGL, Three.js, and modern web technologies</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Three.js</span>
+                            <span class="feature-tag">WebGL</span>
+                            <span class="feature-tag">JavaScript</span>
+                            <span class="feature-tag">React</span>
+                        </div>
+                    </div>
+                    <div class="service-hover-effect"></div>
+                </div>
+
+                <div class="service-card" data-service="spontaneous">
+                    <div class="service-icon">
+                        <canvas class="service-canvas" id="service-canvas-3"></canvas>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Spontaneous AI Systems</h3>
+                        <p class="service-description">Building AI that captures spontaneous thoughts and creates personal life-history models</p>
+                        <div class="service-features">
+                            <span class="feature-tag">OpenAI APIs</span>
+                            <span class="feature-tag">NLP</span>
+                            <span class="feature-tag">Deep Learning</span>
+                            <span class="feature-tag">Neural Networks</span>
+                        </div>
+                    </div>
+                    <div class="service-hover-effect"></div>
+                </div>
+
+                <div class="service-card" data-service="fullstack">
+                    <div class="service-icon">
+                        <canvas class="service-canvas" id="service-canvas-4"></canvas>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Full-Stack Development</h3>
+                        <p class="service-description">End-to-end web application development with modern frameworks and databases</p>
+                        <div class="service-features">
+                            <span class="feature-tag">React</span>
+                            <span class="feature-tag">Node.js</span>
+                            <span class="feature-tag">MongoDB</span>
+                            <span class="feature-tag">Express</span>
+                        </div>
+                    </div>
+                    <div class="service-hover-effect"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="tech" class="tech section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technology Stack</h2>
+                <div class="section-subtitle">Powering AI innovation with cutting-edge tools</div>
+                <div class="title-decoration">
+                    <div class="decoration-line"></div>
+                    <div class="decoration-diamond"></div>
+                    <div class="decoration-line"></div>
+                </div>
+            </div>
+
+            <div class="tech-showcase">
+                <div class="tech-visual">
+                    <canvas id="tech-canvas" class="tech-canvas"></canvas>
+                    <div class="tech-orbits">
+                        <div class="orbit orbit-1">
+                            <div class="orbit-dot"></div>
+                        </div>
+                        <div class="orbit orbit-2">
+                            <div class="orbit-dot"></div>
+                        </div>
+                        <div class="orbit orbit-3">
+                            <div class="orbit-dot"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-list">
+                    <div class="tech-item" data-level="90">
+                        <div class="tech-header">
+                            <div class="tech-name">Python</div>
+                            <div class="tech-level">90%</div>
+                        </div>
+                        <div class="tech-description">Primary language for AI/ML development</div>
+                        <div class="tech-bar">
+                            <div class="tech-progress" data-width="90"></div>
+                        </div>
+                    </div>
+
+                    <div class="tech-item" data-level="85">
+                        <div class="tech-header">
+                            <div class="tech-name">TensorFlow</div>
+                            <div class="tech-level">85%</div>
+                        </div>
+                        <div class="tech-description">Deep learning and neural network frameworks</div>
+                        <div class="tech-bar">
+                            <div class="tech-progress" data-width="85"></div>
+                        </div>
+                    </div>
+
+                    <div class="tech-item" data-level="88">
+                        <div class="tech-header">
+                            <div class="tech-name">JavaScript</div>
+                            <div class="tech-level">88%</div>
+                        </div>
+                        <div class="tech-description">Modern web development and 3D graphics</div>
+                        <div class="tech-bar">
+                            <div class="tech-progress" data-width="88"></div>
+                        </div>
+                    </div>
+
+                    <div class="tech-item" data-level="82">
+                        <div class="tech-header">
+                            <div class="tech-name">Three.js</div>
+                            <div class="tech-level">82%</div>
+                        </div>
+                        <div class="tech-description">3D graphics library for WebGL</div>
+                        <div class="tech-bar">
+                            <div class="tech-progress" data-width="82"></div>
+                        </div>
+                    </div>
+
+                    <div class="tech-item" data-level="85">
+                        <div class="tech-header">
+                            <div class="tech-name">React</div>
+                            <div class="tech-level">85%</div>
+                        </div>
+                        <div class="tech-description">Frontend framework for interactive UIs</div>
+                        <div class="tech-bar">
+                            <div class="tech-progress" data-width="85"></div>
+                        </div>
+                    </div>
+
+                    <div class="tech-item" data-level="80">
+                        <div class="tech-header">
+                            <div class="tech-name">PyTorch</div>
+                            <div class="tech-level">80%</div>
+                        </div>
+                        <div class="tech-description">Machine learning and AI model development</div>
+                        <div class="tech-bar">
+                            <div class="tech-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <div class="section-subtitle">Showcasing AI innovation through digital excellence</div>
+                <div class="title-decoration">
+                    <div class="decoration-line"></div>
+                    <div class="decoration-diamond"></div>
+                    <div class="decoration-line"></div>
+                </div>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="project-card" data-project="spontaneous-ai">
+                    <div class="project-media">
+                        <canvas class="project-canvas" id="project-canvas-1"></canvas>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h3 class="project-title">Spontaneous AI Thought System</h3>
+                                <p class="project-description">Experimental AI model that captures spontaneous thoughts and builds personal life-history models</p>
+                                <div class="project-tech">
+                                    <span class="tech-badge">Python</span>
+                                    <span class="tech-badge">OpenAI API</span>
+                                    <span class="tech-badge">TensorFlow</span>
+                                    <span class="tech-badge">NLP</span>
+                                </div>
+                                <div class="project-status">In Development</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="3d-portfolio">
+                    <div class="project-media">
+                        <canvas class="project-canvas" id="project-canvas-2"></canvas>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h3 class="project-title">3D Interactive Portfolio</h3>
+                                <p class="project-description">Futuristic 3D web portfolio showcasing advanced WebGL and Three.js implementations</p>
+                                <div class="project-tech">
+                                    <span class="tech-badge">Three.js</span>
+                                    <span class="tech-badge">WebGL</span>
+                                    <span class="tech-badge">JavaScript</span>
+                                    <span class="tech-badge">CSS3</span>
+                                </div>
+                                <div class="project-status">Completed</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="human-ai">
+                    <div class="project-media">
+                        <canvas class="project-canvas" id="project-canvas-3"></canvas>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h3 class="project-title">Human-Centric AI Interface</h3>
+                                <p class="project-description">AI system designed to understand and respond to human emotions and context</p>
+                                <div class="project-tech">
+                                    <span class="tech-badge">Python</span>
+                                    <span class="tech-badge">Machine Learning</span>
+                                    <span class="tech-badge">NLP</span>
+                                    <span class="tech-badge">Neural Networks</span>
+                                </div>
+                                <div class="project-status">Research Phase</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="memory-assistant">
+                    <div class="project-media">
+                        <canvas class="project-canvas" id="project-canvas-4"></canvas>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h3 class="project-title">Intelligent Memory Assistant</h3>
+                                <p class="project-description">AI tool that helps connect ideas and reflects on personal thought patterns</p>
+                                <div class="project-tech">
+                                    <span class="tech-badge">AI</span>
+                                    <span class="tech-badge">Memory Models</span>
+                                    <span class="tech-badge">Pattern Recognition</span>
+                                    <span class="tech-badge">Deep Learning</span>
+                                </div>
+                                <div class="project-status">Conceptual</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet the Developer</h2>
+                <div class="section-subtitle">The mind behind the AI magic</div>
+                <div class="title-decoration">
+                    <div class="decoration-line"></div>
+                    <div class="decoration-diamond"></div>
+                    <div class="decoration-line"></div>
+                </div>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-member" data-member="mohammad">
+                    <div class="member-card">
+                        <div class="member-avatar">
+                            <canvas class="avatar-canvas" id="avatar-canvas-1"></canvas>
+                            <div class="avatar-frame">
+                                <div class="frame-segments">
+                                    <div class="segment"></div>
+                                    <div class="segment"></div>
+                                    <div class="segment"></div>
+                                    <div class="segment"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Mohammad Gulam Rabbani</h3>
+                            <p class="member-role">AI & ML Engineer</p>
+                            <p class="member-bio">Aspiring AI & ML Engineer passionate about building intelligent systems that go beyond simple automation</p>
+                            <div class="member-social">
+                                <a href="https://www.linkedin.com/in/mohammad-gulam-rabbani-403623379" class="social-link" target="_blank" title="LinkedIn">
+                                    <span class="social-icon">💼</span>
+                                </a>
+                                <a href="https://github.com/mohammadgulamrabbani" class="social-link" target="_blank" title="GitHub">
+                                    <span class="social-icon">🔗</span>
+                                </a>
+                                <a href="https://mohammadgulamrabbani.github.io/" class="social-link" target="_blank" title="Website">
+                                    <span class="social-icon">🌐</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="member-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="section-subtitle">Let's create something extraordinary together</div>
+                <div class="title-decoration">
+                    <div class="decoration-line"></div>
+                    <div class="decoration-diamond"></div>
+                    <div class="decoration-line"></div>
+                </div>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <canvas class="icon-canvas" id="icon-canvas-1"></canvas>
+                        </div>
+                        <div class="info-content">
+                            <h3 class="info-title">Email</h3>
+                            <p class="info-text">contact@futureaitech.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <canvas class="icon-canvas" id="icon-canvas-2"></canvas>
+                        </div>
+                        <div class="info-content">
+                            <h3 class="info-title">Location</h3>
+                            <p class="info-text">India</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <canvas class="icon-canvas" id="icon-canvas-3"></canvas>
+                        </div>
+                        <div class="info-content">
+                            <h3 class="info-title">Availability</h3>
+                            <p class="info-text">Open for collaboration and innovative AI projects</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" class="form-control" required>
+                        <label for="name" class="form-label">Your Name</label>
+                        <div class="form-highlight"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" class="form-control" required>
+                        <label for="email" class="form-label">Your Email</label>
+                        <div class="form-highlight"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" class="form-control" required>
+                        <label for="subject" class="form-label">Subject</label>
+                        <div class="form-highlight"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                        <label for="message" class="form-label">Your Message</label>
+                        <div class="form-highlight"></div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary form-submit">
+                        <span class="btn-text">Send Message</span>
+                        <div class="btn-particles"></div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="footer-logo">
+                        <div class="logo-3d">
+                            <span class="logo-text">FUTURE</span>
+                            <span class="logo-tech">AI</span>
+                        </div>
+                        <p class="footer-tagline">Building tomorrow's intelligent systems</p>
+                    </div>
+
+                    <div class="footer-links">
+                        <div class="link-group">
+                            <h4 class="link-title">Services</h4>
+                            <ul class="link-list">
+                                <li><a href="#services" class="footer-link">AI & Machine Learning</a></li>
+                                <li><a href="#services" class="footer-link">3D Development</a></li>
+                                <li><a href="#services" class="footer-link">Spontaneous AI</a></li>
+                                <li><a href="#services" class="footer-link">Full-Stack Dev</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="link-group">
+                            <h4 class="link-title">Navigation</h4>
+                            <ul class="link-list">
+                                <li><a href="#about" class="footer-link">About</a></li>
+                                <li><a href="#tech" class="footer-link">Technology</a></li>
+                                <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+                                <li><a href="#contact" class="footer-link">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="link-group">
+                            <h4 class="link-title">Connect</h4>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/mohammad-gulam-rabbani-403623379" class="social-link" target="_blank">
+                                    <span class="social-icon">💼</span>
+                                    <span class="social-text">LinkedIn</span>
+                                </a>
+                                <a href="https://github.com/mohammadgulamrabbani" class="social-link" target="_blank">
+                                    <span class="social-icon">🔗</span>
+                                    <span class="social-text">GitHub</span>
+                                </a>
+                                <a href="https://mohammadgulamrabbani.github.io/" class="social-link" target="_blank">
+                                    <span class="social-icon">🌐</span>
+                                    <span class="social-text">Website</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-divider"></div>
+                    <div class="footer-info">
+                        <p class="copyright">© 2025 Mohammad Gulam Rabbani. All rights reserved.</p>
+                        <div class="footer-legal">
+                            <a href="#" class="legal-link">Privacy Policy</a>
+                            <a href="#" class="legal-link">Terms of Service</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <canvas id="footer-canvas" class="footer-canvas"></canvas>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
