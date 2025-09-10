@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Tech - Next Generation Digital Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-container">
+            <div class="loading-cube">
+                <div class="loading-face loading-face-front"></div>
+                <div class="loading-face loading-face-back"></div>
+                <div class="loading-face loading-face-right"></div>
+                <div class="loading-face loading-face-left"></div>
+                <div class="loading-face loading-face-top"></div>
+                <div class="loading-face loading-face-bottom"></div>
+            </div>
+            <div class="loading-text">
+                <span class="loading-letter">F</span>
+                <span class="loading-letter">U</span>
+                <span class="loading-letter">T</span>
+                <span class="loading-letter">U</span>
+                <span class="loading-letter">R</span>
+                <span class="loading-letter">E</span>
+                <span class="loading-space"></span>
+                <span class="loading-letter">T</span>
+                <span class="loading-letter">E</span>
+                <span class="loading-letter">C</span>
+                <span class="loading-letter">H</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <div class="loading-percentage">0%</div>
+        </div>
+        <div class="loading-particles"></div>
+    </div>
+
+    <!-- Cursor -->
+    <div id="cursor" class="cursor">
+        <div class="cursor-inner"></div>
+        <div class="cursor-outer"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-3d">
+                    <span class="logo-text">FUTURE</span>
+                    <span class="logo-tech">TECH</span>
+                </div>
+                <div class="logo-particles"></div>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link" data-text="Home">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link" data-text="About">About</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link" data-text="Services">Services</a></li>
+                <li class="nav-item"><a href="#tech" class="nav-link" data-text="Technology">Technology</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link" data-text="Portfolio">Portfolio</a></li>
+                <li class="nav-item"><a href="#team" class="nav-link" data-text="Team">Team</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link" data-text="Contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-toggle">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+        </div>
+        <div class="nav-bg-effect"></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="hero-canvas" class="hero-canvas"></canvas>
+        <div class="hero-particles" id="hero-particles"></div>
+        
+        <div class="hero-content">
+            <div class="hero-title-container">
+                <h1 class="hero-title">
+                    <span class="title-word" data-text="FUTURE">FUTURE</span>
+                    <span class="title-word" data-text="TECH">TECH</span>
+                </h1>
+                <div class="title-underline">
+                    <div class="underline-segment"></div>
+                    <div class="underline-segment"></div>
+                    <div class="underline-segment"></div>
+                </div>
+            </div>
+            
+            <h2 class="hero-subtitle">Next Generation Digital Solutions</h2>
+            
+            <p class="hero-description">
+                Experience the future of technology with our cutting-edge solutions powered by AI, 3D graphics, and immersive experiences.
+            </p>
+            
+            <div class="hero-buttons">
+                <button class="btn btn-primary hero-btn" data-text="Explore Tech">
+                    <span class="btn-text">Explore Tech</span>
+                    <div class="btn-particles"></div>
+                </button>
+                <button class="btn btn-secondary hero-btn" data-text="View Projects">
+                    <span class="btn-text">View Projects</span>
+                    <div class="btn-particles"></div>
+                </button>
+            </div>
+        </div>
+
+        <div class="hero-scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span class="scroll-text">Scroll to explore</span>
+        </div>
+
+        <div class="hero-stats">
+            <div class="stat-item">
+                <div class="stat-number" data-target="500">0</div>
+                <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="150">0</div>
+                <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="50">0</div>
+                <div class="stat-label">Awards Won</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Future Tech</h2>
+                <div class="section-subtitle">Pioneering the digital revolution</div>
+                <div class="title-decoration">
+                    <div class="decoration-line"></div>
+                    <div class="decoration-diamond"></div>
+                    <div class="decoration-line"></div>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-intro">
+                        <p class="text-large">We are at the forefront of technological innovation, creating immersive digital experiences that bridge the gap between imagination and reality.</p>
+                    </div>
+                    
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <h3 class="detail-title">Our Mission</h3>
+                            <p class="detail-text">To revolutionize digital experiences through cutting-edge 3D technologies, artificial intelligence, and innovative design patterns that shape the future of web interaction.</p>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <h3 class="detail-title">Our Vision</h3>
+                            <p class="detail-text">A world where digital interfaces seamlessly blend with reality, creating intuitive and immersive experiences that enhance human potential and creativity.</p>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <h3 class="detail-title">Our Values</h3>
+                            <p class="detail-text">Innovation, excellence, and user-centric design drive everything we do. We believe in pushing boundaries while maintaining accessibility and performance.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-visual">
+                    <div class="hologram-container">
+                        <canvas id="about-canvas" class="about-canvas"></canvas>
+                        <div class="hologram-frame">
+                            <div class="frame-corner frame-top-left"></div>
+                            <div class="frame-corner frame-top-right"></div>
+                            <div class="frame-corner frame-bottom-left"></div>
+                            <div class="frame-corner frame-bottom-right"></div>
+                        </div>
+                        <div class="hologram-data">
+                            <div class="data-stream" data-delay="0">01101001 11001010</div>
+                            <div class="data-stream" data-delay="500">11010110 00101111</div>
+                            <div class="data-stream" data-delay="1000">10011011 11100010</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-stats">
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <div class="icon-cube"></div>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" data-target="99">0</div>
+                            <div class="stat-unit">%</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <div class="icon-globe"></div>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" data-target="45">0</div>
+                            <div class="stat-unit">+</div>
+                            <div class="stat-label">Countries Served</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <div class="icon-rocket"></div>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" data-target="1000">0</div>
+                            <div class="stat-unit">+</div>
+                            <div class="stat-label">Innovations Created</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <div class="section-subtitle">Cutting-edge solutions for tomorrow's challenges</div>
+                <div class="title-decoration">
+                    <div class="decoration-line"></div>
+                    <div class="decoration-diamond"></div>
+                    <div class="decoration-line"></div>
+                </div>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-service="3d">
+                    <div class="service-icon">
+                        <canvas class="service-canvas" id="service-canvas-1"></canvas>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">3D Web Development</h3>
+                        <p class="service-description">Creating immersive 3D experiences using WebGL and Three.js</p>
+                        <div class="service-features">
+                            <span class="feature-tag">WebGL</span>
+                            <span class="feature-tag">Three.js</span>
+                            <span class="feature-tag">GLSL Shaders</span>
+                        </div>
+                    </div>
+                    <div class="service-hover-effect"></div>
+                </div>
+
+                <div class="service-card" data-service="ai">
+                    <div class="service-icon">
+                        <canvas class="service-canvas" id="service-canvas-2"></canvas>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">AI Integration</h3>
+                        <p class="service-description">Implementing artificial intelligence for smart applications</p>
+                        <div class="service-features">
+                            <span class="feature-tag">Machine Learning</span>
+                            <span class="feature-tag">Neural Networks</span>
+                            <span class="feature-tag">Computer Vision</span>
+                        </div>
+                    </div>
+                    <div class="service-hover-effect"></div>
+                </div>
+
+                <div class="service-card" data-service="holo">
+                    <div class="service-icon">
+                        <canvas class="service-canvas" id="service-canvas-3"></canvas>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Holographic UI</h3>
+                        <p class="service-description">Designing futuristic interfaces with holographic effects</p>
+                        <div class="service-features">
+                            <span class="feature-tag">CSS3</span>
+                            <span class="feature-tag">SVG Animations</span>
+                            <span class="feature-tag">Canvas API</span>
+                        </div>
+                    </div>
+                    <div class="service-hover-effect"></div>
+                </div>
+
+                <div class="service-card" data-service="vr">
+                    <div class="service-icon">
+                        <canvas class="service-canvas" id="service-canvas-4"></canvas>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">VR/AR Solutions</h3>
+                        <p class="service-description">Building virtual and augmented reality experiences</p>
+                        <div class="service-features">
+                            <span class="feature-tag">WebXR</span>
+                            <span class="feature-tag">AR.js</span>
+                            <span class="feature-tag">A-Frame</span>
+                        </div>
+                    </div>
+                    <div class="service-hover-effect"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="tech" class="tech section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technology Stack</h2>
+                <div class="section-subtitle">Powering innovation with cutting-edge tools</div>
+                <div class="title-decoration">
+                    <div class="decoration-line"></div>
+                    <div class="decoration-diamond"></div>
+                    <div class="decoration-line"></div>
+                </div>
+            </div>
+
+            <div class="tech-showcase">
+                <div class="tech-visual">
+                    <canvas id="tech-canvas" class="tech-canvas"></canvas>
+                    <div class="tech-orbits">
+                        <div class="orbit orbit-1">
+                            <div class="orbit-dot"></div>
+                        </div>
+                        <div class="orbit orbit-2">
+                            <div class="orbit-dot"></div>
+                        </div>
+                        <div class="orbit orbit-3">
+                            <div class="orbit-dot"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-list">
+                    <div class="tech-item" data-level="95">
+                        <div class="tech-header">
+                            <div class="tech-name">Three.js</div>
+                            <div class="tech-level">95%</div>
+                        </div>
+                        <div class="tech-description">3D graphics library for WebGL</div>
+                        <div class="tech-bar">
+                            <div class="tech-progress" data-width="95"></div>
+                        </div>
+                    </div>
+
+                    <div class="tech-item" data-level="90">
+                        <div class="tech-header">
+                            <div class="tech-name">WebGL</div>
+                            <div class="tech-level">90%</div>
+                        </div>
+                        <div class="tech-description">Hardware-accelerated 3D graphics</div>
+                        <div class="tech-bar">
+                            <div class="tech-progress" data-width="90"></div>
+                        </div>
+                    </div>
+
+                    <div class="tech-item" data-level="98">
+                        <div class="tech-header">
+                            <div class="tech-name">CSS3 Animations</div>
+                            <div class="tech-level">98%</div>
+                        </div>
+                        <div class="tech-description">Advanced visual effects and transitions</div>
+                        <div class="tech-bar">
+                            <div class="tech-progress" data-width="98"></div>
+                        </div>
+                    </div>
+
+                    <div class="tech-item" data-level="93">
+                        <div class="tech-header">
+                            <div class="tech-name">Modern JavaScript</div>
+                            <div class="tech-level">93%</div>
+                        </div>
+                        <div class="tech-description">ES6+ features and frameworks</div>
+                        <div class="tech-bar">
+                            <div class="tech-progress" data-width="93"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Projects</h2>
+                <div class="section-subtitle">Showcasing innovation through digital excellence</div>
+                <div class="title-decoration">
+                    <div class="decoration-line"></div>
+                    <div class="decoration-diamond"></div>
+                    <div class="decoration-line"></div>
+                </div>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="project-card" data-project="holographic">
+                    <div class="project-media">
+                        <canvas class="project-canvas" id="project-canvas-1"></canvas>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h3 class="project-title">Holographic Dashboard</h3>
+                                <p class="project-description">Interactive 3D data visualization platform</p>
+                                <div class="project-tech">
+                                    <span class="tech-badge">Three.js</span>
+                                    <span class="tech-badge">WebGL</span>
+                                    <span class="tech-badge">React</span>
+                                </div>
+                                <button class="project-btn">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="ar">
+                    <div class="project-media">
+                        <canvas class="project-canvas" id="project-canvas-2"></canvas>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h3 class="project-title">AR Shopping Experience</h3>
+                                <p class="project-description">Augmented reality e-commerce application</p>
+                                <div class="project-tech">
+                                    <span class="tech-badge">WebXR</span>
+                                    <span class="tech-badge">Three.js</span>
+                                    <span class="tech-badge">AI</span>
+                                </div>
+                                <button class="project-btn">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="neural">
+                    <div class="project-media">
+                        <canvas class="project-canvas" id="project-canvas-3"></canvas>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h3 class="project-title">Neural Network Visualizer</h3>
+                                <p class="project-description">3D representation of machine learning models</p>
+                                <div class="project-tech">
+                                    <span class="tech-badge">D3.js</span>
+                                    <span class="tech-badge">WebGL</span>
+                                    <span class="tech-badge">Python</span>
+                                </div>
+                                <button class="project-btn">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet Our Team</h2>
+                <div class="section-subtitle">The minds behind the magic</div>
+                <div class="title-decoration">
+                    <div class="decoration-line"></div>
+                    <div class="decoration-diamond"></div>
+                    <div class="decoration-line"></div>
+                </div>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-member" data-member="alex">
+                    <div class="member-card">
+                        <div class="member-avatar">
+                            <canvas class="avatar-canvas" id="avatar-canvas-1"></canvas>
+                            <div class="avatar-frame">
+                                <div class="frame-segments">
+                                    <div class="segment"></div>
+                                    <div class="segment"></div>
+                                    <div class="segment"></div>
+                                    <div class="segment"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Alex Chen</h3>
+                            <p class="member-role">3D Graphics Developer</p>
+                            <p class="member-bio">Specializes in WebGL and Three.js implementations</p>
+                            <div class="member-social">
+                                <a href="#" class="social-link">
+                                    <span class="social-icon">💼</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <span class="social-icon">🐦</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <span class="social-icon">🔗</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="member-glow"></div>
+                    </div>
+                </div>
+
+                <div class="team-member" data-member="sarah">
+                    <div class="member-card">
+                        <div class="member-avatar">
+                            <canvas class="avatar-canvas" id="avatar-canvas-2"></canvas>
+                            <div class="avatar-frame">
+                                <div class="frame-segments">
+                                    <div class="segment"></div>
+                                    <div class="segment"></div>
+                                    <div class="segment"></div>
+                                    <div class="segment"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Sarah Kim</h3>
+                            <p class="member-role">UI/UX Designer</p>
+                            <p class="member-bio">Creates futuristic interfaces and holographic designs</p>
+                            <div class="member-social">
+                                <a href="#" class="social-link">
+                                    <span class="social-icon">💼</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <span class="social-icon">🐦</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <span class="social-icon">🔗</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="member-glow"></div>
+                    </div>
+                </div>
+
+                <div class="team-member" data-member="marcus">
+                    <div class="member-card">
+                        <div class="member-avatar">
+                            <canvas class="avatar-canvas" id="avatar-canvas-3"></canvas>
+                            <div class="avatar-frame">
+                                <div class="frame-segments">
+                                    <div class="segment"></div>
+                                    <div class="segment"></div>
+                                    <div class="segment"></div>
+                                    <div class="segment"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Marcus Rodriguez</h3>
+                            <p class="member-role">Frontend Architect</p>
+                            <p class="member-bio">Builds responsive and performant web applications</p>
+                            <div class="member-social">
+                                <a href="#" class="social-link">
+                                    <span class="social-icon">💼</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <span class="social-icon">🐦</span>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <span class="social-icon">🔗</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="member-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="section-subtitle">Let's create something extraordinary together</div>
+                <div class="title-decoration">
+                    <div class="decoration-line"></div>
+                    <div class="decoration-diamond"></div>
+                    <div class="decoration-line"></div>
+                </div>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <canvas class="icon-canvas" id="icon-canvas-1"></canvas>
+                        </div>
+                        <div class="info-content">
+                            <h3 class="info-title">Email</h3>
+                            <p class="info-text">contact@futuretech.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <canvas class="icon-canvas" id="icon-canvas-2"></canvas>
+                        </div>
+                        <div class="info-content">
+                            <h3 class="info-title">Phone</h3>
+                            <p class="info-text">+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <canvas class="icon-canvas" id="icon-canvas-3"></canvas>
+                        </div>
+                        <div class="info-content">
+                            <h3 class="info-title">Location</h3>
+                            <p class="info-text">Silicon Valley, CA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" class="form-control" required>
+                        <label for="name" class="form-label">Your Name</label>
+                        <div class="form-highlight"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" class="form-control" required>
+                        <label for="email" class="form-label">Your Email</label>
+                        <div class="form-highlight"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" class="form-control" required>
+                        <label for="subject" class="form-label">Subject</label>
+                        <div class="form-highlight"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                        <label for="message" class="form-label">Your Message</label>
+                        <div class="form-highlight"></div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary form-submit">
+                        <span class="btn-text">Send Message</span>
+                        <div class="btn-particles"></div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="footer-logo">
+                        <div class="logo-3d">
+                            <span class="logo-text">FUTURE</span>
+                            <span class="logo-tech">TECH</span>
+                        </div>
+                        <p class="footer-tagline">Shaping tomorrow's digital landscape</p>
+                    </div>
+
+                    <div class="footer-links">
+                        <div class="link-group">
+                            <h4 class="link-title">Services</h4>
+                            <ul class="link-list">
+                                <li><a href="#" class="footer-link">3D Development</a></li>
+                                <li><a href="#" class="footer-link">AI Integration</a></li>
+                                <li><a href="#" class="footer-link">Holographic UI</a></li>
+                                <li><a href="#" class="footer-link">VR/AR Solutions</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="link-group">
+                            <h4 class="link-title">Company</h4>
+                            <ul class="link-list">
+                                <li><a href="#about" class="footer-link">About Us</a></li>
+                                <li><a href="#team" class="footer-link">Our Team</a></li>
+                                <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+                                <li><a href="#contact" class="footer-link">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="link-group">
+                            <h4 class="link-title">Connect</h4>
+                            <div class="social-links">
+                                <a href="#" class="social-link" target="_blank">
+                                    <span class="social-icon">🐦</span>
+                                    <span class="social-text">Twitter</span>
+                                </a>
+                                <a href="#" class="social-link" target="_blank">
+                                    <span class="social-icon">🔗</span>
+                                    <span class="social-text">LinkedIn</span>
+                                </a>
+                                <a href="#" class="social-link" target="_blank">
+                                    <span class="social-icon">📷</span>
+                                    <span class="social-text">Instagram</span>
+                                </a>
+                                <a href="#" class="social-link" target="_blank">
+                                    <span class="social-icon">💼</span>
+                                    <span class="social-text">GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-divider"></div>
+                    <div class="footer-info">
+                        <p class="copyright">© 2025 Future Tech. All rights reserved.</p>
+                        <div class="footer-legal">
+                            <a href="#" class="legal-link">Privacy Policy</a>
+                            <a href="#" class="legal-link">Terms of Service</a>
+                            <a href="#" class="legal-link">Cookie Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <canvas id="footer-canvas" class="footer-canvas"></canvas>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
